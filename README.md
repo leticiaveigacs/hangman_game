@@ -12,6 +12,11 @@ Este é um jogo da forca simples desenvolvido em C++. Utiliza fun
 - Informa ao jogador se ele acertou ou errou.
 - Pergunta se o jogador deseja continuar jogando após o término de cada partida.
 
+  
+## Imagem Representativa 🖼️
+
+[Jogo da Forca](https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901)
+
 ## Como Jogar 🎮
 
 1. Execute o programa.
@@ -22,6 +27,8 @@ Este é um jogo da forca simples desenvolvido em C++. Utiliza fun
 6. Se errar uma letra, suas tentativas restantes diminuirão.
 7. Continue tentando até adivinhar a palavra ou até que suas tentativas acabem.
 8. Após o término de cada partida, o jogo perguntará se você deseja jogar novamente.
+
+   https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901
 
 ## Pré-requisitos 📋
 
