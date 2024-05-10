@@ -15,7 +15,7 @@ Este é um jogo da forca simples desenvolvido em C++. Utiliza fun
   
 ## Imagem Representativa 🖼️
 
-![Jogo da Forca](https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901)
+[Jogo da Forca](https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901)
 
 ## Como Jogar 🎮
 
