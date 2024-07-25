@@ -1,59 +1,57 @@
-# Jogo da Forca 💡
+# Hangman Game 💡
 
-Este é um jogo da forca simples desenvolvido em C++. Utiliza fun
+This is a simple Hangman game developed in C++. It utilises various functionalities to create an engaging experience.
 
-## Funcionalidades 🛠️
+- [Click](https://leticiaveigacs.github.io/hangman_game/)
 
-- Permite que o usuário insira uma palavra a ser adivinhada.
-- Mostra na tela uma série de traços representando cada letra da palavra.
-- O jogador pode tentar adivinhar letras.
-- O jogo verifica se a letra inserida pelo jogador faz parte da palavra.
-- Limita o número de tentativas (6 tentativas erradas resultam na derrota).
-- Informa ao jogador se ele acertou ou errou.
-- Pergunta se o jogador deseja continuar jogando após o término de cada partida.
+## Features 🛠️
 
-  
-## Imagem Representativa 🖼️
+- Allows the user to input a word to be guessed.
+- Displays a series of dashes on the screen representing each letter of the word.
+- The player can attempt to guess letters.
+- The game checks if the letter entered by the player is part of the word.
+- Limits the number of attempts (6 incorrect attempts result in defeat).
+- Informs the player whether they have guessed correctly or incorrectly.
+- Asks if the player wishes to continue playing after the end of each round.
 
-[Jogo da Forca](https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901)
+## Representative Image 🖼️
 
-## Como Jogar 🎮
+[Hangman Game](https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901)
 
-1. Execute o programa.
-2. Insira uma palavra que deseja que o seu oponente adivinhe.
-3. O jogo irá exibir uma série de traços representando cada letra da palavra.
-4. Tente adivinhar as letras inserindo-as pelo teclado.
-5. Se acertar uma letra, ela será revelada na posição correspondente na palavra.
-6. Se errar uma letra, suas tentativas restantes diminuirão.
-7. Continue tentando até adivinhar a palavra ou até que suas tentativas acabem.
-8. Após o término de cada partida, o jogo perguntará se você deseja jogar novamente.
+## How to Play 🎮
 
-   https://github.com/leticiaveigacs/hangman_game/issues/1#issue-2289630901
+1. Run the programme.
+2. Enter a word that you want your opponent to guess.
+3. The game will display a series of dashes representing each letter of the word.
+4. Try to guess the letters by entering them via the keyboard.
+5. If you guess a letter correctly, it will be revealed in the corresponding position in the word.
+6. If you guess a letter incorrectly, your remaining attempts will decrease.
+7. Continue guessing until you guess the word or run out of attempts.
+8. After each round, the game will ask if you wish to play again.
 
-## Pré-requisitos 📋
+## Prerequisites 📋
 
-- Este jogo foi desenvolvido em C++ e requer um compilador compatível com C++ para ser executado.
+- This game was developed in C++ and requires a compatible C++ compiler to run.
 
-## Como Compilar e Executar ▶️
+## How to Compile and Run ▶️
 
-1. Clone este repositório para o seu computador.
-2. Navegue até o diretório onde o arquivo `JogoDaForca.cpp` está localizado.
-3. Compile o arquivo utilizando um compilador C++ compatível. Por exemplo:
+1. Clone this repository to your computer.
+2. Navigate to the directory where the `HangmanGame.cpp` file is located.
+3. Compile the file using a compatible C++ compiler. For example:
    ```
-   g++ JogodaForca.cpp -o JogodaForca
+   g++ HangmanGame.cpp -o HangmanGame
    ```
-4. Execute o programa gerado:
+4. Run the generated programme:
    ```
-   ./JogodaForca
+   ./HangmanGame
    ```
 
-## Parte Técnica 🖥️
+## Technical Details 🖥️
 
-O código foi dividido em diferentes funções para facilitar a compreensão e manutenção:
+The code is divided into different functions to facilitate understanding and maintenance:
 
-- `iniciarJogo(string& pal)`: Esta função recebe como parâmetro uma referência para uma string representando a palavra a ser adivinhada e inicializa o jogo.
-  
-- `verificarLetra(string& certas, string& jogadas, string pal, int& tentativas)`: Esta função verifica se a letra jogada pelo usuário faz parte da palavra, atualiza a string `certas`, e decrementa o número de `tentativas` restantes.
+- `startGame(string& word)`: This function takes a reference to a string representing the word to be guessed and initialises the game.
 
-- `repetirJogo(bool acertou, string certa)`: Esta função pergunta ao jogador se ele deseja continuar jogando após o término de uma partida. E informa se o jogador venceu ou perdeu.
+- `checkLetter(string& correct, string& guesses, string word, int& attempts)`: This function checks if the letter guessed by the user is part of the word, updates the `correct` string, and decrements the number of remaining `attempts`.
 
+- `repeatGame(bool won, string correct)`: This function asks the player if they wish to continue playing after the end of a round and informs them whether they have won or lost.
